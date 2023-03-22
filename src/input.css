@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family:  Funbox;
+      src: url(Funbox.otf) format("woff");
+    }
+    @font-face {
+      font-family: JungleRock;
+      src: url(JFJUNROC.TTF) format("woff");
+    }
+    @font-face {
+        font-family: Neucha;
+        src: url(Neucha-Regular.ttf) format("woff");
+    }
+    @font-face {
+        font-family: PermanentMarker;
+        src: url(PermanentMarker-Regular.ttf) format("woff");
+    }
+    @font-face {
+        font-family: BebasNeue;
+        src: url(BebasNeue-Regular.ttf) format("woff");
+    }
+  }

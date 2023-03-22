@@ -1,0 +1,15 @@
+<article class="text-center">
+<div class=" text-slate-900 md:mt-20 mt-10 mb-10 p-2 md:p-10" >
+<h1 class="text-3xl font-bold underline mb-10">{Title}</h1>
+{loopStart}
+<a href="{postLocation}">
+    <div class="font-bold mx-auto hover:bg-slate-50 hover:shadow-xl rounded-md p-2 my-10 transition-all duration-300 ">
+        <h3 class="">{postTitle}</h3>
+        <p class="mx-auto font-bold text-sm">written  on {date}</p>
+        <p class="mt-10 font-normal">{Summary}</p>
+        <hr class="content-center mx-auto" style=" border-bottom-width: 8px; margin-top:60px; margin-bottom:20px; border-style: dotted; border-color: rgb(255, 189, 182); width: 2.5rem; border-top-width: 0px;">
+    </div>
+</a>
+{loopEnd}
+</div>
+</article>
