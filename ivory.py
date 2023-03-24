@@ -192,7 +192,7 @@ def Build():
             for i in postlist:
                 fsr=frontmatter.load('markdown/post/index.md')
                 zxc=frontmatter.load("markdown/post/"+i)
-                summary=" ".join(zxc.content.split()[:70])
+                summary=markdown.markdown(" ".join(zxc.content.split()[:70]))
                 wordcount=len(zxc.content.split())
                 readingTime=ceil((len(zxc.content.split())*0.5)/60)
                 aer=aer+lerw.format(postLocation=i[:-3]+'.html', postTitle=zxc.get('title'), date=zxc.get('date'), Summary=summary, author=author, wordCount=wordcount, readingTime=readingTime)+'\n' 
